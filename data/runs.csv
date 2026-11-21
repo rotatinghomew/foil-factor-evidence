@@ -1,0 +1,13 @@
+id,station,layer,roll,p_assign,c_assign,p_actual,c_actual,stopped,assignment,stage
+E01,N,thin,R01,0,0,0,0,0,random,initial
+E02,N,thin,R02,0,0,0,0,0,random,initial
+E03,N,thin,R03,1,1,1,1,0,random,initial
+E04,N,thin,R04,1,1,1,0,0,random,initial
+E05,S,thin,R01,0,0,0,0,0,random,initial
+E06,S,thin,R03,1,1,1,1,1,random,initial
+E07,S,thick,R05,0,0,0,0,0,random,initial
+E08,S,thick,R06,1,1,1,1,0,random,initial
+E09,S,thick,R07,0,1,0,1,0,pilot,initial
+E10,N,thin,R08,1,0,1,0,0,random,followup
+E11,N,thin,R09,0,1,0,1,0,random,followup
+E12,S,thin,R08,1,0,1,0,0,random,followup

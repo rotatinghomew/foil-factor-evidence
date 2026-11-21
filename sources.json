@@ -1,0 +1,103 @@
+{
+  "tables": {
+    "runs": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "station",
+        "layer",
+        "roll",
+        "p_assign",
+        "c_assign",
+        "p_actual",
+        "c_actual",
+        "stopped",
+        "assignment",
+        "stage"
+      ]
+    },
+    "slots": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "station",
+        "minute",
+        "duration",
+        "crew",
+        "roll",
+        "layer",
+        "p",
+        "c",
+        "after",
+        "maintain",
+        "locked"
+      ]
+    },
+    "rolls": {
+      "key": [
+        "roll"
+      ],
+      "columns": [
+        "roll",
+        "available",
+        "reserved",
+        "quantity"
+      ]
+    },
+    "results": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "run",
+        "overlap",
+        "seal",
+        "scrap"
+      ]
+    },
+    "rules": {
+      "key": [
+        "layer"
+      ],
+      "columns": [
+        "layer",
+        "min_seal_gain",
+        "max_scrap_increase",
+        "confidence",
+        "control_p",
+        "control_c"
+      ]
+    }
+  },
+  "links": [
+    [
+      "results",
+      "run",
+      "runs",
+      "id"
+    ],
+    [
+      "slots",
+      "after",
+      "slots",
+      "id"
+    ],
+    [
+      "slots",
+      "roll",
+      "rolls",
+      "roll"
+    ],
+    [
+      "runs",
+      "layer",
+      "rules",
+      "layer"
+    ]
+  ]
+}

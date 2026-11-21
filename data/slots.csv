@@ -1,0 +1,8 @@
+id,station,minute,duration,crew,roll,layer,p,c,after,maintain,locked
+W01,N,480,25,R1,Q1,thin,1,0,,0,1
+W02,N,505,25,R1,Q2,thin,0,1,W01,0,0
+W03,S,505,25,R1,Q1,thin,1,0,,0,0
+W04,S,530,30,R2,Q3,thick,0,1,,0,0
+W05,S,530,25,R1,Q2,thin,0,0,,1,0
+W06,S,580,35,R2,Q3,thick,1,0,W04,0,0
+W07,N,580,20,R2,Q1,thin,1,1,,0,0
